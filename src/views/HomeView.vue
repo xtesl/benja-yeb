@@ -86,7 +86,7 @@
               <i class="pi pi-file-edit"></i> Get a Free Quote
             </router-link>
             <router-link to="/portfolio"
-              class="border border-stone-600 hover:border-amber-500 text-white hover:text-amber-400 font-bold tracking-widest uppercase text-sm px-8 py-4 transition-all duration-200 flex items-center gap-2">
+              class="border border-stone-600 rounded-md hover:border-amber-500 text-white hover:text-amber-400 font-bold tracking-widest uppercase text-sm px-8 py-4 transition-all duration-200 flex items-center gap-2">
               <i class="pi pi-images"></i> View Our Work
             </router-link>
           </div>
@@ -112,7 +112,7 @@
             <div class="w-0.5 h-9 bg-amber-500 flex-shrink-0"></div>
             <div>
               <div class="text-white text-sm font-bold leading-tight tracking-wide">{{ trust.label }}</div>
-              <div class="text-stone-500 text-xs mt-0.5">{{ trust.sub }}</div>
+              <div class="text-stone-500 text-sm mt-0.5">{{ trust.sub }}</div>
             </div>
           </div>
         </div>
@@ -146,9 +146,9 @@
           <div class="grid grid-cols-2 border border-stone-700">
             <div v-for="(feat, i) in features" :key="feat.title"
               :class="[
-                'p-7 group hover:bg-stone-800/40 transition-colors duration-300',
+                'rounded-md p-7 group hover:bg-stone-800/40 transition-colors duration-300',
                 i % 2 === 0 ? 'border-r border-stone-700' : '',
-                i < 2 ? 'border-b border-stone-700' : '',
+                i < 2 ? 'rounded-md border-b border-stone-700' : '',
               ]">
               <div class="flex items-start justify-between mb-5">
                 <span class="text-[3.5rem] font-black text-stone-800 leading-none group-hover:text-stone-700 transition-colors select-none">
@@ -258,7 +258,7 @@
             <div v-if="i < process.length - 1"
               class="hidden lg:block absolute top-8 left-[calc(50%+2rem)] right-[-50%] h-px bg-stone-800 z-0"></div>
             <div class="relative z-10 text-center">
-              <div class="w-16 h-16 bg-stone-900 border border-stone-700 flex items-center justify-center mx-auto mb-6 relative">
+              <div class="w-16 h-16 bg-stone-900 border-stone-700 flex items-center rounded-md justify-center mx-auto mb-6 relative">
                 <i :class="step.icon" class="text-amber-500 text-xl"></i>
                 <div class="absolute -top-3 -right-3 w-6 h-6 bg-amber-500 flex items-center justify-center">
                   <span class="text-stone-950 text-xs font-black">{{ i + 1 }}</span>
