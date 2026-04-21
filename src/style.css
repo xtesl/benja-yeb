@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@layer base {
+/* @layer base {
   body {
     font-family: 'DM Sans', sans-serif;
   }
@@ -9,4 +9,4 @@
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
   }
-}
+} */
